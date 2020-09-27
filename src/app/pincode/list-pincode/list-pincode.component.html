@@ -1,0 +1,26 @@
+<div class="col-md-6 pincode-container">
+  <h2 style="margin: auto"> Pincode Details</h2>
+  <button class="btn btn-danger" style="width:120px" (click)="addPincode()">Add Pincode</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>UserName</th>
+    
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of pincodes">
+      <td class="hidden">{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      
+      <td><button class="btn btn-success" (click)="deletePincode(user)"> Delete</button>
+        <button class="btn btn-success" (click)="editPincode(user)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

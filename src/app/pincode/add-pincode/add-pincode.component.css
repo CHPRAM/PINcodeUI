@@ -1,0 +1,12 @@
+
+.error{
+    color: #FF0000;
+  }
+  .pincode-container {
+    display: flex;
+    flex-direction: column;
+    background-color:#ddffcd;
+    margin: 2em auto auto;
+  }
+
+  
